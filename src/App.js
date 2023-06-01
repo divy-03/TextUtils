@@ -1,12 +1,12 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
+import Navbar from "./Navbar";
 
 function App() {
   return (
     <>
-<div className="App1">
-  <h1>Hello world</h1>
-</div>
+      {/* <Navbar Title="TextUtils" /> */}
+      <Navbar/>
     </>
   );
 }

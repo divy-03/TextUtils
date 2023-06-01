@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,76 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+} 
+
+
+.flex-start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  padding: 0;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+.nav-left {
+  width: 70%;
+  height: 60px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title {
+  margin-left: 60px;
+}
+
+.nav-right {
+  width: 30%;
+  height: 60px;
+  /* background-color: aqua; */
+  justify-content: end;
+}
+
+.nav-list {
+  margin-left: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list li{
+  padding: 10px
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  /* margin: auto; */
+}
+
+.btn-in {
+  border: none;
+  margin: 10px;
+  padding: 10px;
+}
+
+#signup {
+  margin-right: 20px;
+  background-color: white;
+}
+
+#login {
+  background: none;
 }
