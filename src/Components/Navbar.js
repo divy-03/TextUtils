@@ -1,10 +1,10 @@
 import React from "react";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 export default function Navbar(props) {
   return (
     <nav>
-      <div className="navbar flex-start">
+      <div className={`navbar flex-start navbar-${props.mode}`}>
         <div className="nav-left flex-start">
           <h2 className="title">{props.Title}</h2>
           <div className="nav-list flex-start">
@@ -29,6 +29,24 @@ export default function Navbar(props) {
     </ul> */}
         </div>
         <div className="nav-right flex-start">
+          <div>
+            {/* <label className="toggle">
+              <input type="checkbox" />
+              <span className="toggle-slider"></span>
+            </label> */}
+            <div className="custom-control custom-switch">
+              <input
+                onClick={props.toggleMode}
+                type="checkbox"
+                className="custom-control-input"
+                id="customSwitch"
+              />
+              <label className="custom-control-label" htmlFor="customSwitch">
+                {`Enable ${props.mode} mode`}
+              </label>
+            </div>
+          </div>
+          {/* <div>Dark Mode</div> */}
           <div className="in">
             <button id="login" className="btn-in">
               LogIn
@@ -44,9 +62,9 @@ export default function Navbar(props) {
 }
 
 Navbar.propTypes = {
-    title: PropTypes.string
-}
+  title: PropTypes.string,
+};
 
 Navbar.defaultProps = {
-    title : "Set title here"
-}
+  title: "Set title here",
+};
