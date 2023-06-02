@@ -160,6 +160,7 @@ input:checked+.toggle-slider:before {
   margin-right: 20px;
   background-color: white;
   font-weight: 400;
+  border-radius: 5px;
 }
 
 #login {
@@ -201,3 +202,36 @@ input:checked+.toggle-slider:before {
 /* .body-light {
   background-color: #2b2e36;
 } */
+
+.alert-container {
+  position: relative;
+}
+
+.alert {
+  background-color: #ffc86add;
+  min-width: 350px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-left: 8px solid #f8ab27d5 ;
+}
+
+.alert-msg strong {
+  font-size: 22px;
+}
+
+.alert-msg {
+  color: #af6f00;
+  font-size: 18px;
+}
+
+.clsAlert {
+  color: #af6f00;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  background: #af6f0040;
+  border: none;
+  height: 100%;
+  padding: 0 20px;
+}
