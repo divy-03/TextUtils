@@ -163,6 +163,10 @@ input:checked+.toggle-slider:before {
   border-radius: 5px;
 }
 
+.btn-in:hover {
+  background-color: #23262e;
+}
+
 #login {
   background: none;
   color: white;

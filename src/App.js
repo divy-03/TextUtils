@@ -11,8 +11,11 @@ function App() {
 
   const [alert, setAlert] = useState(null);
 
-  const showAlert = (message) => {
-    setAlert("message")
+  const showAlert = (message, type) => {
+    setAlert({
+      msg: message,
+      type: type
+    })
   }
 
   const toggleMode = () => {
@@ -20,19 +23,21 @@ function App() {
       setMode('dark')
       document.body.style.backgroundColor = 'white';
       document.body.style.color = 'black';
-      setAlert("Light mode has been enabled")
+      showAlert("Light mode has been enabled", "sucess");
+      document.title = "TextUtils - Light Mode"
     }
     else{
       setMode('light')
       document.body.style.backgroundColor = '#2b2e36';
       document.body.style.color = 'white';
-      setAlert("Dark mode has been enabled")
+      showAlert("Dark mode has been enabled", "sucess");
+      document.title = "TextUtils - Dark Mode"
     }
   }
   return (
     <>
       <Navbar Title="TextUtils" mode={mode} toggleMode={toggleMode}/>
-      <Alert alertmsg={alert}/>
+      {/* <Alert alertmsg={alert}/> */}
       {/* <Navbar/> */}
       <TextArea heading="Enter your text here" mode={mode}/>
     </>
