@@ -269,7 +269,7 @@ input:checked+.toggle-slider:before {
   color: rgb(180, 96, 96);
 }
 
-.info-body {
+.info-body-dark {
 
   margin: 65px 20px;
   width: 500px;
@@ -277,6 +277,16 @@ input:checked+.toggle-slider:before {
   font-size: 18px;
   text-align: justify;
   color: rgb(77, 77, 77);
+}
+
+.info-body-light {
+
+  margin: 65px 20px;
+  width: 500px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  color: rgb(208, 208, 208);
 }
 
 .coupon {
@@ -306,8 +316,14 @@ input:checked+.toggle-slider:before {
   margin: 20px;
 }
 
-.box-desc {
+.box-desc-dark {
   color: rgba(77, 77, 77, 0.9);
+  font-family: 'Josefin Sans', sans-serif;
+  margin-left: 20px;
+}
+
+.box-desc-light {
+  color: rgba(208, 208, 208, 0.7);
   font-family: 'Josefin Sans', sans-serif;
   margin-left: 20px;
 }
