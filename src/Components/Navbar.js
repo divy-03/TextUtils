@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 
 export default function Navbar(props) {
   return (
@@ -8,23 +10,23 @@ export default function Navbar(props) {
         <div className="nav-left flex-start">
           <h2 className="title">{props.Title}</h2>
           <div className="nav-list flex-start">
-            <a href="/">Home</a>
-            <a href="/">About</a>
-            <a href="/">Service</a>
-            <a href="/">Contact</a>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/">Service</Link>
+            <Link to="/">Contact</Link>
           </div>
           {/* <ul className="nav-list flex-start">
       <li>
-        <a href="/">Home</a>
+        <Link to="/">Home</Link>
       </li>
       <li>
-        <a href="/">About</a>
+        <Link to="/">About</Link>
       </li>
       <li>
-        <a href="/">Service</a>
+        <Link to="/">Service</Link>
       </li>
       <li>
-        <a href="/">Contact</a>
+        <Link to="/">Contact</Link>
       </li>
     </ul> */}
         </div>
